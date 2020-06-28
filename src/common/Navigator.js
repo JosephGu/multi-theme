@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { makeStyles, withTheme } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
@@ -40,15 +40,15 @@ const categories = [
   },
 ];
 
-const styles = (theme) => ({
+const useStyles = makeStyles((theme) => ({
   drawer: {
-
+    borderRight: `1px solid ${theme.palette.primary.main}`
   }
-});
+}));
 
 
-function Navigator({ classes, ...other }) {
-
+function Navigator({ ...other }) {
+  const classes = useStyles();
   return (
     <Drawer variant="permanent" {...other} className={classes.drawer}>
       <List disablePadding>
@@ -94,4 +94,4 @@ Navigator.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default (withStyles(styles, { withTheme: true })(Navigator));
+export default withTheme(Navigator);
