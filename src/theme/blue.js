@@ -1,9 +1,9 @@
 import { blueGrey } from '@material-ui/core/colors';
 
-const backgroundFront = blueGrey[900];
-const backgroundBack = blueGrey[800]
-const fontColorDark = 'rgba(255,255,255,0.85)'
-const fontColorLight = 'rgba(255,255,255,0.45)'
+const backgroundFront = '#2c387e';
+const backgroundBack = '#3f51b5';
+const fontColorDark = 'rgba(255,255,255,0.85)';
+const fontColorLight = 'rgba(255,255,255,0.45)';
 
 export const blueThemeConfig = {
     palette: {

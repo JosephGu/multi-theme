@@ -24,10 +24,10 @@ const styles = () => ({
     paddingTop: 30,
   },
   searchButton: {
-    margin: '0 20px'
+    marginLeft: 50
   },
   resetButton: {
-    margin: '0 20px'
+    marginLeft: 10
   }
 });
 const Header = ({ classes, onThemeChange, onDrawerToggle }) => {

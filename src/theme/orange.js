@@ -1,7 +1,7 @@
-import { orange } from '@material-ui/core/colors';
+import { orange,red } from '@material-ui/core/colors';
 
-const backgroundFront = orange[900];
-const backgroundBack = orange[500]
+const backgroundFront = '#b23c17';
+const backgroundBack = '#ff5722';
 const fontColorDark = 'rgba(255,255,255,0.85)'
 const fontColorLight = 'rgba(255,255,255,0.45)'
 

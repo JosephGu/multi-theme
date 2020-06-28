@@ -12,7 +12,7 @@ const SearchBox = () => {
     const classes = useStyles();
     return (
         <FormControl className={classes.formControl}>
-            <TextField label='Search User' variant="outlined"></TextField>
+            <TextField label='Search User' ></TextField>
         </FormControl>
     )
 }

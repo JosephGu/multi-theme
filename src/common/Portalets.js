@@ -6,16 +6,16 @@ const useStyles = makeStyles((theme) => ({
     Portalets: {
         display: 'flex',
         flexWrap: 'wrap',
-        padding: 20,
         backgroundColor: theme.palette.secondary.main,
         flex: '1 0 auto',
+        alignContent: 'start',
     }
 }))
 
 const Portalets = () => {
     const classes = useStyles();
 
-    const portletList = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    const portletList = [1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12]
     return <div className={classes.Portalets}>
         {
             portletList.map((portal) => {
