@@ -1,5 +1,5 @@
-const backgroundFront = '#141414';
-const backgroundBack = '#000'
+const backgroundFront = '#102027'
+const backgroundBack = '#37474f'
 const fontColorDark = 'rgba(255,255,255,0.85)'
 const fontColorLight = 'rgba(255,255,255,0.45)'
 
