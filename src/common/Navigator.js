@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
@@ -42,16 +41,16 @@ const categories = [
 ];
 
 const styles = (theme) => ({
- 
+  drawer: {
+
+  }
 });
 
-const drawerWidth = '256px';
 
-function Navigator(props) {
-  const { classes } = props;
+function Navigator({ classes, ...other }) {
 
   return (
-    <Drawer variant="permanent" className={classes.drawer} PaperProps={{ style: { width: drawerWidth } }}>
+    <Drawer variant="permanent" {...other} className={classes.drawer}>
       <List disablePadding>
         <ListItem>
           <ListItemText>
@@ -76,8 +75,7 @@ function Navigator(props) {
             {children.map(({ id: childId, icon, active }) => (
               <ListItem
                 key={childId}
-                button
-              >
+                button>
                 <ListItemIcon>{icon}</ListItemIcon>
                 <ListItemText>
                   {childId}

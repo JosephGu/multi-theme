@@ -13,8 +13,8 @@ const styles = ({
 const SelectCom = ({ classes, dataSrc, value, onSelectChange }) => {
     return (
         <FormControl className={classes.formControl}>
-            <InputLabel id="select-ag-label">Frequency</InputLabel>
-            <Select value={value} onChange={e => onSelectChange(e.target.value)} labelId="select-ag-label">
+            <InputLabel id="select-label">Frequency</InputLabel>
+            <Select value={value} onChange={e => onSelectChange(e.target.value)} labelId="select-label">
                 {
                     dataSrc.map((menuItem) => {
                         return <MenuItem value={menuItem.value}>{menuItem.label}</MenuItem>

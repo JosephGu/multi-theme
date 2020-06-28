@@ -1,9 +1,9 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import { orangeThemeConfig } from './orange';
 import { blueThemeConfig } from './blue';
-import { redThemeConfig } from './red'
+import { darkThemeConfig } from './dark'
 
-export const redTheme = createMuiTheme(redThemeConfig);
+export const darkTheme = createMuiTheme(darkThemeConfig);
 
 export const blueTheme = createMuiTheme(blueThemeConfig);
 
