@@ -26,7 +26,16 @@ export const blueThemeConfig = {
             paper: {
                 backgroundColor: '#000'
             }
-
+        },
+        MuiAppBar:{
+            root: {
+                backgroundColor: '#000'
+            }
+        },
+        MuiPaper:{
+            root:{
+                backgroundColor: '#000'
+            }
         }
     },
 }

@@ -42,14 +42,16 @@ const categories = [
 ];
 
 const styles = (theme) => ({
-
+ 
 });
 
+const drawerWidth = '256px';
+
 function Navigator(props) {
-  const { classes, ...other } = props;
+  const { classes } = props;
 
   return (
-    <Drawer variant="permanent" {...other}>
+    <Drawer variant="permanent" className={classes.drawer} PaperProps={{ style: { width: drawerWidth } }}>
       <List disablePadding>
         <ListItem>
           <ListItemText>
