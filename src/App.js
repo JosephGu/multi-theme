@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import { withStyles, Hidden } from '@material-ui/core';
-import { orangeTheme } from './theme/themeGenerator';
+import { lightTheme } from './theme/themeGenerator';
 import Navigator from './common/Navigator';
 
 import Header from './common/Header';
@@ -34,7 +34,7 @@ const styles = (theme) => ({
 
 const App = ({ classes }) => {
 
-  const [theme, setTheme] = useState(orangeTheme);
+  const [theme, setTheme] = useState(lightTheme);
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);

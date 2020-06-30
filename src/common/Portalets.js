@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
     Portalets: {
         display: 'flex',
         flexWrap: 'wrap',
-        backgroundColor: theme.palette.secondary.main,
         flex: '1 0 auto',
         alignContent: 'start',
     }

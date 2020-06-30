@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
-import { orangeTheme, blueTheme, darkTheme } from '../theme/themeGenerator';
+import { lightTheme, blueTheme, darkTheme } from '../theme/themeGenerator';
 import { ColorLens } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
 import { Dialog, DialogTitle } from '@material-ui/core';
@@ -22,7 +22,7 @@ const ThemeSetting = ({ themeChange }) => {
                 <div style={{ display: themeOpen ? 'block' : 'none' }} >
                     <Button onClick={() => themeChange(darkTheme)}>Dark</Button>
                     <Button onClick={() => themeChange(blueTheme)}>Blue</Button>
-                    <Button onClick={() => themeChange(orangeTheme)}>Orange</Button>
+                    <Button onClick={() => themeChange(lightTheme)}>Light</Button>
                 </div>
                 <div>
 

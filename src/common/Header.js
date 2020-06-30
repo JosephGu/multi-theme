@@ -62,8 +62,8 @@ const Header = ({ classes, onThemeChange, onDrawerToggle }) => {
           <SelectComp value={frequency} onSelectChange={item => setFrequency(item)} dataSrc={frequencyDS}></SelectComp>
           <SelectComp value={frequency} onSelectChange={item => setFrequency(item)} dataSrc={frequencyDS}></SelectComp>
           <SearchBox ></SearchBox>
-          <Button className={classes.searchButton} variant="contained" color='primary'>Search</Button>
-          <Button className={classes.resetButton} variant="contained" color='primary'>Reset</Button>
+          <Button className={classes.searchButton} variant="contained" >Search</Button>
+          <Button className={classes.resetButton} variant="contained" >Reset</Button>
         </div>
         <ThemeSetting className={classes.themeSetting} themeChange={onThemeChange} />
       </AppBar>

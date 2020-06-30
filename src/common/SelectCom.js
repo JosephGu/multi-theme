@@ -14,12 +14,12 @@ const SelectCom = ({ classes, dataSrc, value, onSelectChange }) => {
     return (
         <FormControl className={classes.formControl}>
             <InputLabel id="select-label">Frequency</InputLabel>
-            <Select value={value} onChange={e => onSelectChange(e.target.value)} labelId="select-label">
+            <Select value={value} onChange={e => onSelectChange(e.target.value)} labelId="select-label" className={classes.select}>
                 {
                     dataSrc.map((menuItem) => {
                         return <MenuItem value={menuItem.value}>{menuItem.label}</MenuItem>
                     })
-                }             
+                }
             </Select>
         </FormControl>
     )
